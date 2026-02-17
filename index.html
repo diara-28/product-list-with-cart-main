@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List with Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <!-- internal styling -->
+    <style>
+        body{
+            margin:0px;
+            margin-top: 50px;
+            background-color: rgb(252, 248, 244);
+          
+        }
+        section{
+            width:1350px;
+            height:1000px;
+             display:grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        h2{
+              font-weight: 400, 600, 700;
+              margin-left:155px;   
+        }
+        #product-list{
+            width:700px;
+            height:100vh;
+             display:grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin-left:150px;
+        }
+        .products{
+            width:200px;
+            height: 350px;
+              margin-left:10px;
+           
+        }
+        .product-image{
+            width:200px;
+            height: 200px;
+            border-radius: 10px;
+
+         
+           
+        }
+        #cart{
+            width:400px;
+            height:300px;
+            background: white;
+            margin-left: 50px;
+            position:relative;
+            bottom:50px;
+            border-radius: 10px;
+            
+            
+        }
+        .add-cart{
+            width:150px;
+            height:50px;
+            background: white;
+            margin: auto;
+            border-radius: 20px;
+            position:relative;
+            bottom:30px;
+            border: 5px solid black;
+            border-width: 2px;
+            border-color: hsl(14, 86%, 42%);
+        }
+        #cart-symbol{
+            position: relative;
+            left: 30px;
+            bottom: 35px;
+        }
+        .details{
+            height:100px;
+            position:relative;
+            bottom:45px; 
+            font-size: 1rem;
+            font-weight: 400px;
+            line-height: 5px;
+            font-family: [Red Hat Text];
+           
+        }
+        #empty-cart{
+            margin-top: 70px;
+            margin-left: 120px;
+        }
+        .cart-text{
+            margin-left: 60px;
+        }
+        p{
+            margin-top:20px;
+        }
+        h4{
+            margin-top: 10px;
+        }
+        h5{
+            color: brown
+    
+        }
+        @media (max-width: 900px) {
+            body{
+                max-width: 900px;
+                flex-wrap: wrap;
+                background-color: aqua  ;
+            }
+            h2{
+                margin-left: 140px; 
+            }
+            #product-list{
+                display: flex;
+                flex-direction: column;
+                margin-left: 80px;
+            }
+            #empty-cart{
+                margin-left: 200px;
+            }
+
+        }
+        
+
+    </style>
+</head>
+<body>
+     <h2>Dessert</h2>
+    <section>
+       
+    <div id="product-list">
+        
+        <div class="products">
+            <img src="assets/fonts/images/image-waffle-desktop.jpg" class="product-image" alt="image-waffle-desktop">
+                <div class="add-cart">
+                    <p class="cart-text">Add Cart</p>
+                    <img src="assets/fonts/images/icon-add-to-cart.svg" id="cart-symbol" alt="cart">
+                </div>
+                <div class="details">
+                <p>  Waffle</p>
+                <h4>Waffle with Berries</h4>
+                <h5>$6.50</h5>
+                </div>
+        </div>
+        <div class="products">
+            <img src="assets/fonts/images/image-creme-brulee-desktop.jpg" class="product-image" alt="image-waffle-desktop">
+                <div class="add-cart">
+                    <p class="cart-text">Add cart</p>
+                <img src="assets/fonts/images/icon-add-to-cart.svg" id="cart-symbol" alt="cart">
+                </div>
+                 <div class="details">
+                <p>  Crème Brûlée</p>
+                <h4>Vanilla Bean Crème Brûlée</h4>
+                <h5>$7.00</h5>
+                </div>
+
+        </div>
+        <div class="products">
+            <img src="assets/fonts/images/image-macaron-desktop.jpg" class="product-image" alt="image-waffle-desktop">
+                <div class="add-cart">
+                    <p class="cart-text">Add Cart</p>
+                    <img src="assets/fonts/images/icon-add-to-cart.svg" id="cart-symbol" alt="cart">
+                </div>
+                <div class="details">
+                <p> Macaron</p>
+                <h4>Macaron Mix of Five</h4>
+                <h5>$8.00</h5>
+                </div>
+        </div>
+        <div class="products">
+            <img src="assets/fonts/images/image-tiramisu-desktop.jpg" class="product-image" alt="image-waffle-desktop">
+                <div class="add-cart">
+                    <p class="cart-text">Add Cart</p>
+                    <img src="assets/fonts/images/icon-add-to-cart.svg" id="cart-symbol" alt="cart">
+                </div>
+                <div class="details">
+                <p> Tiramisu </p>
+                <h4>Classic Tiramisu</h4>
+                <h5>$5.50</h5>
+                </div>
+        </div>
+        <div class="products">
+            <img src="assets/fonts/images/image-baklava-desktop.jpg" class="product-image" alt="image-waffle-desktop">
+                <div class="add-cart">
+                    <p class="cart-text">Add Cart</p>
+                    <img src="assets/fonts/images/icon-add-to-cart.svg" id="cart-symbol" alt="cart">
+                </div>
+                 <div class="details">
+                <p>  Baklava</p>
+                <h4>Pistachio Baklava</h4>
+                <h5>$4.00</h5>
+                </div>
+
+        </div>
+        <div class="products">
+            <img src="assets/fonts/images/image-meringue-desktop.jpg" class="product-image" alt="image-waffle-desktop">
+                <div class="add-cart">
+                    <p class="cart-text">Add Cart</p>
+                    <img src="assets/fonts/images/icon-add-to-cart.svg" id="cart-symbol" alt="cart">
+                </div>
+                <div class="details">
+                <p> Pie</p>
+                <h4>Lemon Meringue Pie</h4>
+                <h5>$5.00</h5>
+                </div>
+        </div>
+        <div class="products">
+            <img src="assets/fonts/images/image-cake-desktop.jpg" class="product-image" alt="image-waffle-desktop">
+                <div class="add-cart">
+                    <p class="cart-text">Add Cart</p>
+                    <img src="assets/fonts/images/icon-add-to-cart.svg" id="cart-symbol" alt="cart">
+                </div>
+                <div class="details">
+                <p> Cake </p>
+                <h4>Red Velvet Cake</h4>
+                <h5>$4.50</h5>
+                </div>
+        </div>
+        <div class="products">
+            <img src="assets/fonts/images/image-brownie-desktop.jpg" class="product-image" alt="image-waffle-desktop">
+                <div class="add-cart">
+                    <p class="cart-text">Add Cart</p>
+                    <img src="assets/fonts/images/icon-add-to-cart.svg" id="cart-symbol" alt="cart">
+                </div>
+                 <div class="details">
+                <p> Brownie</p>
+                <h4>Salted Caramel Brownie</h4>
+                <h5>$5.50</h5>
+                </div>
+
+        </div>
+        <div class="products">
+            <img src="assets/fonts/images/image-panna-cotta-desktop.jpg" class="product-image" alt="image-waffle-desktop">
+                <div class="add-cart">
+                    <p class="cart-text">Add Cart</p>
+                    <img src="assets/fonts/images/icon-add-to-cart.svg" id="cart-symbol" alt="cart">
+                </div>
+                <div class="details">
+                <p> Panna Cotta </p>
+                <h4>Vanilla Panna Cotta</h4>
+                <h5> $6.50</h5>
+                </div>
+        </div> 
+    </div>
+    </section> 
+    <footer> 
+    <div id="cart">
+        <img src="assets/fonts/images/illustration-empty-cart.svg" id="empty-cart" alt="illustration-empty-cart">
+    </div>
+    </footer>
+</body>
+</html>
