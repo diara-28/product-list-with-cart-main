@@ -30,7 +30,7 @@ function ProductCard({ product, cart, setCart }) {
       <p>${product.price}</p>
 
       {!itemInCart ? (
-        <button onClick={addToCart}>Add to cart</button>
+        <button onClick={addToCart}>🛒 Add to cart</button>
       ) : (
         <div className="qty">
           <button onClick={decrease}>-</button>

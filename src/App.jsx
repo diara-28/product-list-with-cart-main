@@ -29,7 +29,7 @@ function App() {
         <ProductList products={productsData} cart={cart} setCart={setCart} />
 
         <div className="cart">
-          <h2>Cart</h2>
+          <h2>Cart ({cart.length})</h2>
           {cart.length === 0 && <p>No items yet</p>}
           {cart.map((item, index) => (
             <div className="cart-row" key={index}>
