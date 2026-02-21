@@ -6,9 +6,10 @@ body {
 }
 
 .page-title {
-  text-align: center;
+  /* text-align: center; */
   font-size: 32px;
-  margin: 24px 0;
+  margin-left: 200px;
+  /* margin: 24px 0; */
   font-weight: 700;
   color: #000; /* ensure visible on mobile */
 }
@@ -20,6 +21,7 @@ body {
   gap: 20px;
   padding: 20px;
   width: 100%;
+  margin-left: 150px;
   box-sizing: border-box;
   color: #000; /* ensure text inside container is visible */
 }
@@ -79,7 +81,7 @@ button:hover {
 }
 
 /* Cart styling */
-.cart {
+.cart{
   background: #fff;
   padding: 10px;
   border-radius: 10px;
@@ -151,14 +153,20 @@ button:hover {
 
 /* Responsive */
 @media (max-width: 900px) {
-  .container {
-    grid-template-columns: 1fr; /* cart below products */
+  .page-title {
+    margin-left: 0;
+    text-align: center;
   }
+
+  .container {
+    margin-left: 0px;
+    grid-template-columns: 1fr;
+  }
+
   .products-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
 @media (max-width: 600px) {
   .products-grid {
     grid-template-columns: 1fr;
